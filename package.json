@@ -4,9 +4,13 @@
   "description": "A Node-RED integration of Dahua network devices (NVR, IP-Cameras)",
   "author": "Igor Starovierov <igor.decler@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
   "keywords": [
     "node-red",
-    "dahua"
+    "dahua",
+    "canvasio"
   ],
   "node-red": {
     "nodes": {

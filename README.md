@@ -1,3 +1,73 @@
+# Dahua Device
+
+Canvas IO Workflows — maintained integration/fork of an independent Node-RED node package.
+
+## Canvas IO
+
+| | |
+|--|--|
+| Domain | Security / Dahua |
+| Development status | Integrated in local harness (cio-wfs-dev) |
+| Palette category (operational) | `Canvas IO` |
+| Config nodes | remain `category: "config"` |
+| Local repository | `cio-wfs-nodes/cio-wfs-node-security-dahua` |
+| npm package name | `node-red-contrib-dahua-device` (unchanged) |
+
+`cio-wfs-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
+
+This repository is a **Canvas IO-maintained integration/fork**. Protocol and node runtime logic originate from upstream; Canvas IO changes are limited to integration, presentation, and local development packaging.
+
+## Nodes
+
+### Operational (palette: Canvas IO)
+
+- `dahua-device`, `dahua-device-day`, `dahua-device-night`
+
+### Configuration
+
+- `dahua-device-config`
+
+## Development
+
+```powershell
+cd C:\GitHub\canvasio\cio-wfs-nodes\cio-wfs-node-security-dahua
+npm install
+```
+
+Local harness:
+
+```powershell
+cd C:\GitHub\canvasio\cio-wfs-dev
+npm install
+cd C:\GitHub\canvasio\cio-wfs-core
+node packages/node_modules/node-red/red.js --userDir C:\GitHub\canvasio\cio-wfs-dev
+```
+
+Open http://localhost:1880
+
+## Testing
+
+No automated unit tests.
+
+## Upstream
+
+| | |
+|--|--|
+| Original package | `node-red-contrib-dahua-device` |
+| Upstream project | https://github.com/inwaar/node-red-contrib-dahua-device |
+
+Canvas IO does not claim authorship of the original upstream implementation.
+
+## License
+
+MIT (see package.json; add LICENSE file in a later hygiene pass if missing).
+
+---
+
+## Upstream documentation
+
+The following sections retain useful upstream technical documentation (adapted only where needed).
+
 node-red-contrib-dahua-device
 ========================
 
