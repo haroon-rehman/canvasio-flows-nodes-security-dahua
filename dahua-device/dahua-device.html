@@ -1,16 +1,17 @@
 <script type="text/javascript">
     RED.nodes.registerType('dahua-device', {
         category: 'Security · Dahua',
+    paletteLabel: 'Dahua Event',
         color: '#bba5cf',
         defaults: {
-            name: { value: 'Dahua device' },
+            name: { value: 'Dahua Event' },
             device: { value: '', type: 'dahua-device-config', required: true },
         },
         inputs: 0,
         outputs: 1,
         icon: 'dahua.png',
         label: function () {
-            return this.name || 'Dahua';
+            return this.name || 'Dahua Event';
         },
     });
 </script>

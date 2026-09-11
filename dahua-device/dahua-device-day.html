@@ -1,16 +1,17 @@
 <script type="text/javascript">
     RED.nodes.registerType('dahua-device-day', {
         category: 'Security · Dahua',
+    paletteLabel: 'Dahua Day Profile',
         color: '#bba5cf',
         defaults: {
-            name: { value: 'Dahua device set day profile' },
+            name: { value: 'Dahua Day Profile' },
             device: { value: '', type: 'dahua-device-config', required: true },
         },
         inputs: 1,
         outputs: 0,
         icon: 'dahua.png',
         label: function () {
-            return this.name || 'Dahua';
+            return this.name || 'Dahua Day Profile';
         },
     });
 </script>

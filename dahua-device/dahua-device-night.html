@@ -1,16 +1,17 @@
 <script type="text/javascript">
     RED.nodes.registerType('dahua-device-night', {
         category: 'Security · Dahua',
+    paletteLabel: 'Dahua Night Profile',
         color: '#bba5cf',
         defaults: {
-            name: { value: 'Dahua device set night profile' },
+            name: { value: 'Dahua Night Profile' },
             device: { value: '', type: 'dahua-device-config', required: true },
         },
         inputs: 1,
         outputs: 0,
         icon: 'dahua.png',
         label: function () {
-            return this.name || 'Dahua';
+            return this.name || 'Dahua Night Profile';
         },
     });
 </script>
