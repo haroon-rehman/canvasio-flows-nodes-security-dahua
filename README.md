@@ -11,7 +11,7 @@ Canvas IO Workflows — maintained integration/fork of an independent Node-RED n
 | Palette category (operational) | `Canvas IO` |
 | Config nodes | remain `category: "config"` |
 | Local repository | `cio-wfs-nodes/cio-wfs-node-security-dahua` |
-| npm package name | `node-red-contrib-dahua-device` (unchanged) |
+| npm package name | `@canvasio/node-security-dahua` (`1.0.3-canvasio.1`); lineage tag `v1.0.3` |
 
 `cio-wfs-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
 
